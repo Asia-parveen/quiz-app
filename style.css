@@ -213,6 +213,14 @@ span {
     padding: 10px;
     flex-direction: column;
   }
+  video {
+    width: 300px;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+
+    /* margin-right: 4px; */
+  }
 }
 
 /* Small Screens (sm) – 576px to 768px */
@@ -220,6 +228,14 @@ span {
   .container {
     font-size: 16px;
     padding: 15px;
+  }
+  video {
+    width: 380px;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+
+    /* margin-right: 4px; */
   }
 }
 
@@ -229,4 +245,5 @@ span {
     font-size: 17px;
     padding: 18px;
   }
+
 }
