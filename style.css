@@ -115,7 +115,7 @@ span {
 }
 #reset-btn {
   padding: 10px 20px;
-  width: 100%;
+  width: 150px;
   background: mediumvioletred;
   text-align: center;
 
@@ -194,7 +194,7 @@ span {
     box-shadow: 1px 1px 1px 1px purple;
   }
   video {
-    width: 250px;
+    width: 200px;
     text-align: center;
     height: auto;
     margin-top: 10px;
@@ -214,6 +214,14 @@ span {
     font-size: 14px;
     padding: 10px;
     flex-direction: column;
+  }
+  video {
+    width: 200px;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+
+    /* margin-right: 4px; */
   }
 }
 
