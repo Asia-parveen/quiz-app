@@ -214,8 +214,21 @@ span {
     
   }
 }
+@media (mix-width: 381px)and (max-width: 481px){
+  .container {
+    font-size: 14px;
+    padding: 10px;
+    flex-direction: column;
+  }
+  video {
+    width: 280px;
+  }
+   
+
+  
+}
 /* Extra-Small Screens (xsm) – up to 576px */
-@media (min-width: 381px) and (max-width: 576px) {
+@media (min-width: 482px) and (max-width: 576px) {
   .container {
     font-size: 14px;
     padding: 10px;
