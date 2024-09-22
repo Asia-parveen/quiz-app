@@ -204,6 +204,8 @@ span {
   .result {
     font-size: 18px;
     font-weight: 200;
+    width: 90%;
+    color: rgb(8, 0, 8);
   }
 }
 /* Extra-Small Screens (xsm) – up to 576px */
