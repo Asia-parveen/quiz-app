@@ -194,7 +194,7 @@ span {
     box-shadow: 1px 1px 1px 1px purple;
   }
   video {
-    width: 230px;
+    width: 260px;
     text-align: center;
     height: auto;
     margin-top: 10px;
@@ -204,7 +204,14 @@ span {
   .result {
     font-size: 16px;
     font-weight: 200;
+   
+  }
+  #reset-btn {
+  
     width: 90%;
+ 
+  
+    
   }
 }
 /* Extra-Small Screens (xsm) – up to 576px */
@@ -215,7 +222,7 @@ span {
     flex-direction: column;
   }
   video {
-    width: 350px;
+    width: 380px;
     text-align: center;
     height: auto;
     margin-top: 10px;
@@ -231,7 +238,7 @@ span {
     padding: 15px;
   }
   video {
-    width: 420px;
+    width: 480px;
     text-align: center;
     height: auto;
     margin-top: 10px;
