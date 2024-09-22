@@ -8,7 +8,9 @@
   </head>
   <body>
     <div class="app">
-      <h1>Simple Quiz</h1>
+      <div id="timer" class="timer">Time left:<span id="time">120 </span>   seconds</div>
+      <h1>Quiz Application</h1>
+     
       <div class="quiz">
         <h2 id="question">Question goes here</h2>
         <div id="answer-buttons">
@@ -18,10 +20,15 @@
           <button class="btn">Answer4</button>
           <button class="btn">Answer5</button>
         </div>
+        <div class="buttons">
         <button id="prev-btn" class="nav-btn">Show Previous</button>
         <div id="next-btn">Next</div>
       </div>
+      </div>
+      <div id="result" style="display:none;" class="result"></div>
+      <!-- <source src="assets/party.mp4" type="video/mp4"> -->
     </div>
+   
 
     <script src="app.js"></script>
   </body>

@@ -5,19 +5,34 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  background: rgb(41, 1, 1);
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.timer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  font-size: 14px;
+  color: rgb(39, 1, 39);
+}
+span {
+  color: black;
+  font-size: 16px;
 }
 .app {
   width: 90%;
+
   max-width: 600px;
-  background-color: white;
+  background-color: rgb(243, 175, 243);
   margin: 100px auto;
   border-radius: 10px;
   padding: 30px;
 }
 .app h1 {
-  font-size: 25px;
-  color: #001e4d;
+  font-size: 30px;
+  color: rgb(39, 1, 39);
   font-weight: 600;
   border-bottom: 1px solid black;
   padding-bottom: 30px;
@@ -26,13 +41,14 @@ body {
   padding: 20px 0;
 }
 .quiz h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-  color: #001e4d;
+  color: rgb(59, 1, 59);
 }
 .btn {
   background: white;
   color: #222;
+  font-size: 14px;
   font-weight: 500;
   width: 100%;
   border: 1px solid #222;
@@ -50,11 +66,16 @@ body {
 .btn:disabled {
   cursor: no-drop;
 }
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
 #next-btn {
   width: 150px;
   border: 0;
   margin: 20px auto 0;
-  background: #001e4d;
+
+  background: purple;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -64,16 +85,16 @@ body {
   display: none;
 }
 #next-btn:hover {
-  background-color: rgb(142, 142, 243);
+  background-color: white;
   color: black;
-  box-shadow: 1px 1px 1px 2px blue;
+  box-shadow: 1px 1px 1px 2px purple;
 }
 #prev-btn {
   width: 150px;
   border: 0;
   margin: 20px auto 0;
 
-  background: rgb(2, 105, 2);
+  background: purple;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -83,20 +104,37 @@ body {
   display: none;
 }
 #prev-btn:hover {
-  background-color: rgb(68, 147, 68);
+  background-color: white;
   color: black;
-  box-shadow: 1px 1px 1px 2px rgb(1, 25, 1);
+  box-shadow: 1px 1px 1px 2px purple;
+}
+.result {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(37, 2, 37);
+}
+#reset-btn {
+  padding: 10px 20px;
+  width: 150px;
+  background: mediumvioletred;
+  text-align: center;
+
+  font-weight: 400;
+  color: black;
+  border: none;
+  font-size: 14px;
+}
+#reset-btn:hover {
+  background-color: mediumorchid;
 }
 
 .correct {
-  background-color: rgb(131, 249, 131);
+  background-color: rgb(198, 198, 236);
 }
 .incorrect {
-  background-color: rgb(246, 106, 106);
+  background-color: rgb(248, 145, 145);
 }
-/* responsive */
 
-/* Default styling for larger screens */
 .container {
   font-size: 18px;
   padding: 20px;
@@ -104,15 +142,72 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 380px) {
   .container {
     font-size: 12px;
     padding: 8px;
     flex-direction: column;
   }
+  .app h1 {
+    font-size: 25px;
+
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+  }
+  .quiz h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #next-btn {
+    width: 100px;
+    font-size: 12px;
+    border: 0;
+    margin: 10px auto 0;
+    background: purple;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    align-self: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 3px;
+    display: none;
+  }
+  #next-btn:hover {
+    box-shadow: 1px 1px 1px 1px purple;
+  }
+  #prev-btn {
+    width: 120px;
+
+    padding: 8px;
+    margin: 8px auto 0;
+    align-self: center;
+
+    font-size: 13px;
+
+    padding: 8px;
+
+    display: none;
+  }
+  #prev-btn:hover {
+    box-shadow: 1px 1px 1px 1px purple;
+  }
+  video {
+    width: 210px;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+
+    /* margin-right: 4px; */
+  }
+  .result {
+    font-size: 16px;
+    font-weight: 200;
+  }
 }
 /* Extra-Small Screens (xsm) – up to 576px */
-@media (min-width: 481px) and (max-width: 576px) {
+@media (min-width: 381px) and (max-width: 576px) {
   .container {
     font-size: 14px;
     padding: 10px;
