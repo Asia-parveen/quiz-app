@@ -111,11 +111,11 @@ span {
 .result {
   font-size: 20px;
   font-weight: 400;
-  color: rgb(37, 2, 37);
+  color: rgb(6, 0, 6);
 }
 #reset-btn {
   padding: 10px 20px;
-  width: 150px;
+  width: 100%;
   background: mediumvioletred;
   text-align: center;
 
@@ -149,14 +149,14 @@ span {
     flex-direction: column;
   }
   .app h1 {
-    font-size: 25px;
+    font-size: 28px;
 
     font-weight: 400;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
   }
   .quiz h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
   }
   #next-btn {
@@ -194,7 +194,7 @@ span {
     box-shadow: 1px 1px 1px 1px purple;
   }
   video {
-    width: 210px;
+    width: 250px;
     text-align: center;
     height: auto;
     margin-top: 10px;
@@ -202,7 +202,7 @@ span {
     /* margin-right: 4px; */
   }
   .result {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
   }
 }
