@@ -78,7 +78,7 @@ function submitQuiz() {
 
     // Add a video element dynamically
     resultDiv.innerHTML += `<br>
-      <video width="420" height="350" autoplay>
+      <video width="520" height="420" autoplay>
         <source src="party.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>`;
